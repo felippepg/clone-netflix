@@ -8,16 +8,49 @@
     box-sizing: border-box;
 }
 
-
+/*principal*/
 body {
     background-color: var(--preto);
     font-family: Arial, Helvetica, sans-serif;
+    color:white;
 }
 
 header .container  {
-    display: flex;
+    display: flex; /*display em linha*/
     align-items: center;
     margin-top: 20px;
+    justify-content: space-between;
+}
+
+header .container .navegacao {
+    display: flex;
+    align-items: center;
+}
+
+header .container .usuario {
+    display: flex;
+    align-items: center;
+}
+header .usuario nav .usuario  {
+    display: flex; /*display em linha*/
+    align-items: center;
+    margin-top: 20px;
+    margin: 0;
+}
+
+header .infantil {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+header .fas {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+header .user {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 header .logo {
@@ -37,4 +70,46 @@ header nav a {
 
 header nav a:hover {
     color: #fff;
+}
+
+/* filme destaque*/
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%),url('../img/capa-serie.jpg');
+    
+    height: 800px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .titulo {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.filme-principal .descricao {
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+.filme-principal .botao {
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    padding: 15px;
+    
+    font-size: 12px;
+    color: white;
+    cursor: pointer;
+    transition: 1s ease all;
+    height: 50px;
+    width: 200px;
+}
+
+.filme-principal .botao:hover {
+    background-color: white;
+    color: black;
 }
