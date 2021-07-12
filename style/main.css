@@ -20,17 +20,14 @@ header .container  {
     align-items: center;
     margin-top: 20px;
     justify-content: space-between;
+    margin-left: 10px;
 }
 
-header .container .navegacao {
+header .container .navegacao, .usuario {
     display: flex;
     align-items: center;
 }
 
-header .container .usuario {
-    display: flex;
-    align-items: center;
-}
 header .usuario nav .usuario  {
     display: flex; /*display em linha*/
     align-items: center;
@@ -38,20 +35,11 @@ header .usuario nav .usuario  {
     margin: 0;
 }
 
-header .infantil {
+header .infantil, .user, .fas {
     margin-left: 10px;
     margin-right: 10px;
 }
 
-header .fas {
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-header .user {
-    margin-left: 10px;
-    margin-right: 10px;
-}
 
 header .logo {
     color: var(--vermelho);
@@ -107,9 +95,20 @@ header nav a:hover {
     transition: 1s ease all;
     height: 50px;
     width: 200px;
+    margin-right: 10px;
 }
 
 .filme-principal .botao:hover {
     background-color: white;
     color: black;
+}
+
+.filme-principal .container {
+    margin-left: 50px;
+    width: 60%;
+}
+.box-filmes {
+    width: 100%;
+    height: 100%;
+    display: block;
 }
